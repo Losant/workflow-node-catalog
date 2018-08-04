@@ -1,0 +1,183 @@
+{
+  "_exportDate": "2018-08-04T20:23:05.586Z",
+  "_type": "flow",
+  "applicationId": "5b572784cbcffe0005f0b3ba",
+  "customNodeConfig": {
+    "fields": [
+      {
+        "description": "Your Dark Sky API Key.",
+        "id": "apiKey",
+        "label": "Dark Sky API Key",
+        "required": true,
+        "type": "stringTemplate"
+      },
+      {
+        "description": "The GPS Coordinates to retrieve weather for in decimal degrees format (e.g. 39.108,-84.509).",
+        "id": "gpsCoords",
+        "label": "GPS Coordinates",
+        "required": true,
+        "type": "stringTemplate"
+      }
+    ],
+    "outputCount": 1,
+    "resultDescription": "The result of the Dark Sky API request. Documentation here: https://darksky.net/dev/docs#forecast-request\nIf an error occurred while making the request, the result will contain an \"error\" object with details.",
+    "resultMode": "required"
+  },
+  "customNodeSupports": [
+    "cloud"
+  ],
+  "customNodeVersions": [
+  ],
+  "customNodes": [
+  ],
+  "description": "Retrieves weather information from the Dark Sky API.",
+  "enabled": true,
+  "flowClass": "customNode",
+  "flowId": "5b60d0b8ccae0700053db852",
+  "globals": [
+  ],
+  "iconData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjlGOEZBNjc5OEQyODExRTg4M0M5QjA0NEQ4RDJDQkVEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjlGOEZBNjdBOEQyODExRTg4M0M5QjA0NEQ4RDJDQkVEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OUY4RkE2Nzc4RDI4MTFFODgzQzlCMDQ0RDhEMkNCRUQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OUY4RkE2Nzg4RDI4MTFFODgzQzlCMDQ0RDhEMkNCRUQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4yE80KAAAJuElEQVR42uxdCYzW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",
+  "id": "5b660b24f24eac000542d3d7",
+  "name": "Dark Sky",
+  "nodes": [
+    {
+      "config": {
+        "branchIndexTemplate": 0,
+        "resultSourcePath": "working.result"
+      },
+      "id": "9ayK_x5D3S",
+      "meta": {
+        "category": "customNodeEnd",
+        "description": "Returns the result (or error) object to the outer workflow.",
+        "label": "Output",
+        "name": "custom-node-end-single",
+        "x": 180,
+        "y": 620
+      },
+      "outputIds": [
+      ],
+      "type": "CustomNodeCapNode"
+    },
+    {
+      "config": {
+        "authCredentials": {
+        },
+        "authType": "none",
+        "disableSSLVerification": false,
+        "errorBehavior": "payloadPath",
+        "errorPath": "working.result",
+        "headerInfo": [
+        ],
+        "method": "GET",
+        "responsePath": "working.result",
+        "timeoutTemplate": "",
+        "uriTemplate": "https://api.darksky.net/forecast/{{data.apiKey}}/{{data.gpsCoords}}"
+      },
+      "id": "ZEwLfmZrdY",
+      "meta": {
+        "category": "data",
+        "description": "Makes the actual Dark Sky API request.",
+        "label": "HTTP",
+        "name": "http",
+        "x": 180,
+        "y": 280
+      },
+      "outputIds": [
+        [
+          "ziV7qb42L9"
+        ]
+      ],
+      "type": "HttpNode"
+    },
+    {
+      "config": {
+        "message": "",
+        "property": ""
+      },
+      "id": "N0Jir9xw9e",
+      "meta": {
+        "category": "output",
+        "description": "",
+        "label": "Debug",
+        "name": "debug",
+        "x": 180,
+        "y": 500
+      },
+      "outputIds": [
+        [
+          "9ayK_x5D3S"
+        ]
+      ],
+      "type": "DebugNode"
+    },
+    {
+      "config": {
+        "rules": [
+          {
+            "source": "working.result.request",
+            "type": "remove"
+          }
+        ]
+      },
+      "id": "ziV7qb42L9",
+      "meta": {
+        "category": "logic",
+        "description": "Removes the request information from the result object.",
+        "label": "Mutate",
+        "name": "mutate",
+        "x": 180,
+        "y": 400
+      },
+      "outputIds": [
+        [
+          "N0Jir9xw9e"
+        ]
+      ],
+      "type": "MutateNode"
+    }
+  ],
+  "triggers": [
+    {
+      "config": {
+      },
+      "key": "customNodeStart",
+      "meta": {
+        "category": "trigger",
+        "description": "The custom node fires here ...",
+        "label": "Start: Dark Sky",
+        "name": "customNodeStart",
+        "uiId": "SywHdN5P6W",
+        "x": 180,
+        "y": 100
+      },
+      "outputIds": [
+        [
+          "ZEwLfmZrdY"
+        ]
+      ],
+      "type": "customNodeStart"
+    },
+    {
+      "config": {
+      },
+      "key": "5b60d0b8ccae0700053db852-OUmpOUnR_4UOSh9ahpOLE",
+      "meta": {
+        "category": "trigger",
+        "description": "",
+        "label": "Virtual Button",
+        "name": "virtualButton",
+        "payload": "{\n  \"apiKey\": \"your-api-key\",\n  \"gpsCoords\": \"39.108,-84.509\"\n}",
+        "uiId": "IFQaKs3Qp_",
+        "x": 380,
+        "y": 100
+      },
+      "outputIds": [
+        [
+          "ZEwLfmZrdY"
+        ]
+      ],
+      "type": "virtualButton"
+    }
+  ],
+  "version": "v1.0.0"
+}
