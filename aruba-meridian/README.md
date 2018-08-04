@@ -90,9 +90,15 @@ If the request to Meridian's API fails, the output will contain an `error` objec
 } 
 ```
 
+## Version History
+
+| Version | Date | Description |
+| ------- | -------- | ---------------- |
+| v1.0.0  | 8/3/2018 | Initial release. |
+
 ---
 
-This node was developed by [Losant](https://www.losant.com). Please place issues, comments, or questions on the [Losant Forums](https://forums.losant.com).
+This node is developed and maintained by [Losant](https://www.losant.com). Please place issues, comments, or questions on the [Losant Forums](https://forums.losant.com).
 
 Copyright (c) 2018 Losant IoT, Inc
 
