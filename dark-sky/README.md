@@ -1,5 +1,5 @@
 # Dark Sky
-This node provide access to [Dark Sky's Forecast API](https://darksky.net/dev/docs#forecast-request).
+This node provides access to [Dark Sky's Forecast API](https://darksky.net/dev/docs#forecast-request).
 
 ## Input Configuration
 * `Dark Sky API Key`: Your Dark Sky API key.
