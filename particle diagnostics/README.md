@@ -7,7 +7,7 @@ This node provide access to [Particle's Remote Diagnostics API](https://docs.par
 * `Method`: The API route you would like to call on the device.
 
 ## Output Result
-The result of all successful requests will include `body`, `headers`, `statusCode` and `request` fields. The `body` object contains the response data.
+The result of all successful requests will include `body`, `headers`, and `statusCode` fields. The `body` object contains the response data.
 The following is an example of the request body when calling the method 'Update'.
 
 ```json
