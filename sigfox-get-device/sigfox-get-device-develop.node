@@ -1,20 +1,20 @@
 {
-  "_exportDate": "2018-08-06T18:03:04.115Z",
+  "_exportDate": "2018-08-06T20:31:19.572Z",
   "_type": "flow",
   "applicationId": "5b392f205a71ed0005838ed5",
   "customNodeConfig": {
     "fields": [
       {
-        "description": "Your Sigfox username.",
-        "id": "sigfox-username",
-        "label": "Sigfox Username",
+        "description": "Your Sigfox API access login.",
+        "id": "sigfox-access-login",
+        "label": "API Access Login",
         "required": true,
         "type": "stringTemplate"
       },
       {
-        "description": "Your Sigfox password.",
-        "id": "sigfox-password",
-        "label": "Sigfox Password",
+        "description": "Your Sigfox API access password.",
+        "id": "sigfox-access-password",
+        "label": "API Access Password",
         "required": true,
         "type": "stringTemplate"
       },
@@ -40,17 +40,16 @@
   "description": "Retrieves a device from the Sigfox API.",
   "enabled": true,
   "flowClass": "customNode",
-  "flowId": "5b687f3647dc9a000522fe4a",
   "globals": [
   ],
   "iconData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Q0RGOEZGRUY5MUM2MTFFODgzQjVGRjgzNzdDMkFDQzgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Q0RGOEZGRjA5MUM2MTFFODgzQjVGRjgzNzdDMkFDQzgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDREY4RkZFRDkxQzYxMUU4ODNCNUZGODM3N0MyQUNDOCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDREY4RkZFRTkxQzYxMUU4ODNCNUZGODM3N0MyQUNDOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PjtQXv4AAAKSSURBVHja5NdLSFRRGMDxGXMIlJ6avUhBMggDkXAxQw+EoNcm2kQhLcJVUhtJwYpo3AURERpS0YMiMNRV7iqoCJJKpWhTiRAVEfQgQovq9j/DN3G53nPPOXcMFx34DTNzz5zvO4975tyk53mJmSxFiRkuxb7387AMY/j+D2KVIY0MvqEXL/IJVKBJAjfiEYamMfhq7MRGrMUEFqI1yRqo5E03RiRwPSolS/X5UoGBj2K35vq+BAlk0awWY8B6XMRtbA65bnLCM5fzqmKXBNM11IibuGEZOI1xz66cVHfBO5RHDOMdbMdT3MeWiLrH8QBVllM0rDJuQqtl79Ro3EVH4Hu1lvo891KmfrwcZxzmdhYGcUo+z8eTGMHVtOY2ojcoRYvlsP3CNrxHl9yu9THukGzuVXqxBr2Oq3yBF78M5NvJb8XP8DJ3X9qVKlm8qrTjq2Pv9/995+vRIjxUG5Oh54vx2dcb9V2NQ++P+dsLNr4XVyKCl+JVoMGMXNtlEXw02GZYkG60aBIYCmk047veZkhghU0CJXiMhsD3PZpG04F6pzX1toZ1SjfU1RjBKt/UeJYJKM8DdbK6aY1abDtwGXX47ZiAWqiTcv1C1KI23et1FgsrrfltJ16b9pNiw/1aUcBZoBPVcsp6G/dMeL2ABH6gD21xD6VH5BxXSOmXs2ZtnAQOTdN5cDiqLV0C6mA61zKA6cHiHCZlJKwTaHbo4RfD9Qn5o1vnksAGy+D3cBCbDPU+YalLAnMMDX7AHkn0KjpwFjWa+kmkwicwfIO4ptl0PuIwUiG/OSDHrB7Z95dgtpy4B+Uve0qspObhNCUPKw34iVHcwoDMaVRRDyErZXSL5AmoX07XU4fmv386/iPAAHyJzX1CoetRAAAAAElFTkSuQmCC",
-  "id": "5b688d5647dc9a000522fe4d",
-  "name": "Sigfox - Get Device",
+  "id": "5b687f3647dc9a000522fe4a",
+  "name": "Sigfox: Get Device",
   "nodes": [
     {
       "config": {
         "branchIndexTemplate": 0,
-        "resultSourcePath": ""
+        "resultSourcePath": "working.result"
       },
       "id": "J_ZEtd4nfn",
       "meta": {
@@ -68,18 +67,18 @@
     {
       "config": {
         "authCredentials": {
-          "passwordTemplate": "{{data.sigfox-password}}",
-          "usernameTemplate": "{{data.sigfox-username}}"
+          "passwordTemplate": "{{data.sigfox-access-password}}",
+          "usernameTemplate": "{{data.sigfox-access-login}}"
         },
         "authType": "basic",
         "disableSSLVerification": false,
         "errorBehavior": "payloadPath",
-        "errorPath": "data.result",
+        "errorPath": "working.result",
         "headerInfo": [
         ],
         "method": "GET",
-        "responsePath": "data.result",
-        "timeoutTemplate": "30",
+        "responsePath": "working.result",
+        "timeoutTemplate": "",
         "uriTemplate": "https://backend.sigfox.com/api/devices/{{data.sigfox-device-id}}"
       },
       "id": "pd9RVL6wfc",
@@ -123,7 +122,7 @@
       "config": {
         "rules": [
           {
-            "source": "data.result.request",
+            "source": "working.result.request",
             "type": "remove"
           }
         ]
@@ -145,7 +144,6 @@
       "type": "MutateNode"
     }
   ],
-  "notes": "Initial Release",
   "triggers": [
     {
       "config": {
@@ -154,7 +152,7 @@
       "meta": {
         "category": "trigger",
         "description": "The custom node fires here ...",
-        "label": "Start: Sigfox - Get Device",
+        "label": "Start: Sigfox: Get Device",
         "name": "customNodeStart",
         "uiId": "SywHdN5P6W",
         "x": 160,
@@ -176,7 +174,7 @@
         "description": "",
         "label": "Virtual Button",
         "name": "virtualButton",
-        "payload": "{\n \"sigfox-username\": \"5b646b223c87897c6f9936ee\",\n \"sigfox-password\": \"9fd420668ca6c540c7e80d68e76327ba\",\n \"sigfox-device-id\" : \"4D54A6\"\n}",
+        "payload": "{\n \"sigfox-access-login\": \"your-access-login\",\n \"sigfox-access-password\": \"your-access-password\",\n \"sigfox-device-id\" : \"your-device-id\"\n}",
         "uiId": "SvvfhBFCmk",
         "x": 380,
         "y": 40
@@ -188,6 +186,5 @@
       ],
       "type": "virtualButton"
     }
-  ],
-  "version": "v1.0.0"
+  ]
 }
