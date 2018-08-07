@@ -8,6 +8,16 @@ First, download the `.node` file that you'd like to import to your local compute
 
 Once the Contributed Node is imported, it will immediately be available in the `Custom Nodes` section in your workflow palette.
 
+## Nodes in this Catalog
+| Node | Latest Version | Description |
+| ---- | --------------- | ----------- |
+| Aruba Meridian      | v1.0.0 | Retrieves data from the Meridian Asset Tracking API. |
+| Convert Temperature | v1.0.0 | Converts temperatures between Celsius, Fahrenheit, and Kelvin. |
+| Dark Sky            | v1.0.0 | Retrieves weather information from the Dark Sky API. |
+| Downsample          | v1.0.0 | Filters a streaming set of data by downsampling multiple data points into a single value. |
+| Hologram            | v1.0.0 | Retrieves details about a specific Hologram device. |
+| Moving Average      | v1.0.0 | Calculates a moving average over a configurable number of data points. |
+
 ## Adding a Node to this Catalog
 Contributing nodes to this catalog is an excellent way to expose your product or service to the Losant developer community.
 
