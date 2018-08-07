@@ -11,12 +11,12 @@ Once the Contributed Node is imported, it will immediately be available in the `
 ## Nodes in this Catalog
 | Node | Latest Version | Description |
 | ---- | --------------- | ----------- |
-| Aruba Meridian      | v1.0.0 | Retrieves data from the Meridian Asset Tracking API. |
-| Convert Temperature | v1.0.0 | Converts temperatures between Celsius, Fahrenheit, and Kelvin. |
-| Dark Sky            | v1.0.0 | Retrieves weather information from the Dark Sky API. |
-| Downsample          | v1.0.0 | Filters a streaming set of data by downsampling multiple data points into a single value. |
-| Hologram            | v1.0.0 | Retrieves details about a specific Hologram device. |
-| Moving Average      | v1.0.0 | Calculates a moving average over a configurable number of data points. |
+| [Aruba Meridian](https://github.com/Losant/workflow-node-catalog/tree/master/aruba-meridian) | v1.0.0 | Retrieves data from the Meridian Asset Tracking API. |
+| [Convert Temperature](https://github.com/Losant/workflow-node-catalog/tree/master/covert-temperature) | v1.0.0 | Converts temperatures between Celsius, Fahrenheit, and Kelvin. |
+| [Dark Sky](https://github.com/Losant/workflow-node-catalog/tree/master/dark-sky) | v1.0.0 | Retrieves weather information from the Dark Sky API. |
+| [Downsample](https://github.com/Losant/workflow-node-catalog/tree/master/downsample) | v1.0.0 | Filters a streaming set of data by downsampling multiple data points into a single value. |
+| [Hologram](https://github.com/Losant/workflow-node-catalog/tree/master/hologram) | v1.0.0 | Retrieves details about a specific Hologram device. |
+| [Moving Average](https://github.com/Losant/workflow-node-catalog/tree/master/moving-average) | v1.0.0 | Calculates a moving average over a configurable number of data points. |
 
 ## Adding a Node to this Catalog
 Contributing nodes to this catalog is an excellent way to expose your product or service to the Losant developer community.
