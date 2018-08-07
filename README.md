@@ -2,7 +2,7 @@
 This repository contains a collection of contributed nodes for [Losant's Visual Workflow Engine](https://docs.losant.com/workflows/overview/). These nodes provide additional capabilities and third-party integrations above and beyond the built-in nodes provided by the Losant workflow editor.
 
 ## Importing a Contributed Node
-Each folder in this repository is made up of one or more `.node` files. Each file represents a self-contained node that can be imported into your Losant Application as a [Custom Node]().
+Each folder in this repository is made up of one or more `.node` files. Each file represents a self-contained node that can be imported into your Losant Application as a [Custom Node](https://docs.losant.com/workflows/custom-nodes/overview/).
 
 First, download the `.node` file that you'd like to import to your local computer. Next, navigate to your application's Custom Nodes page by using the `Workflows -> Custom Nodes` main application menu. Lastly, import the node using the `Import` button that's located at the top-right of the Custom Node list. This will prompt you to upload the `.node` file you previously downloaded.
 
@@ -13,11 +13,11 @@ Contributing nodes to this catalog is an excellent way to expose your product or
 
 ### 1. Build and Test the Node
 
-The first step to contributing a node is to following the custom node [documentation](http://docs.losant.com/workflows/custom-nodes/overview/) and [walkthrough](http://docs.losant.com/workflows/custom-nodes/walkthrough/) to develop your new node within your own Losant application. The existing nodes in this catalog provide great reference examples.
+The first step to contributing a node is to following the custom node [documentation](https://docs.losant.com/workflows/custom-nodes/overview/) and [walkthrough](https://docs.losant.com/workflows/custom-nodes/walkthrough/) to develop your new node within your own Losant application. The existing nodes in this catalog provide great reference examples.
 
 ### 2. Version the Node
 
-When you're ready to submit the node, [create a version](http://docs.losant.com/workflows/custom-nodes/overview/#versioning) of the node using [Semantic Versioning](https://semver.org/). Following Semantic Versioning is a requirement for all contributed nodes. This allows the consumers of these nodes to better understand the impact of each new revision.
+When you're ready to submit the node, [create a version](https://docs.losant.com/workflows/custom-nodes/overview/#versioning) of the node using [Semantic Versioning](https://semver.org/). Following Semantic Versioning is a requirement for all contributed nodes. This allows the consumers of these nodes to better understand the impact of each new revision.
 
 ### 3. Export the Node
 
