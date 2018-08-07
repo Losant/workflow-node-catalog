@@ -13,15 +13,15 @@ Contributing nodes to this catalog is an excellent way to expose your product or
 
 ### 1. Build and Test the Node
 
-The first step to contributing a node is to following the custom node [documentation]() and [walkthrough]() to develop your new node within your own Losant application. The existing nodes in this catalog provide great reference examples.
+The first step to contributing a node is to following the custom node [documentation](http://docs.losant.com/workflows/custom-nodes/overview/) and [walkthrough](http://docs.losant.com/workflows/custom-nodes/walkthrough/) to develop your new node within your own Losant application. The existing nodes in this catalog provide great reference examples.
 
 ### 2. Version the Node
 
-When you're ready to submit the node, [create a version]() of the node using [Semantic Versioning](https://semver.org/). Following Semantic Versioning is a requirement for all contributed nodes. This allows the consumers of these nodes to better understand the impact of each new revision.
+When you're ready to submit the node, [create a version](http://docs.losant.com/workflows/custom-nodes/overview/#versioning) of the node using [Semantic Versioning](https://semver.org/). Following Semantic Versioning is a requirement for all contributed nodes. This allows the consumers of these nodes to better understand the impact of each new revision.
 
 ### 3. Export the Node
 
-Using Losant's built-in [export feature](), export the node to a `.node` file. The name of the `.node` file should be the same as your custom node's name with spaces replaced with dashes. For example, if your node's name is "Moving Average", the exported file should be named `moving-average.node`.
+Using Losant's built-in export feature, export the node to a `.node` file. The name of the `.node` file should be the same as your custom node's name with spaces replaced with dashes. For example, if your node's name is "Moving Average", the exported file should be named `moving-average.node`.
 
 ### 4. Submit Pull Request
 Contributing nodes to this catalog is performed by submitting a pull request against the `master` branch of this repository. Each contribution will be reviewed by the Losant team.
@@ -32,7 +32,7 @@ If at all possible, try to keep each node self-contained, which means they do no
 
 Add a `README.md` file to your folder with instructions on how to properly consume your contributed node. Refer to the nodes in this repository for example readme files.
 
-Add a `LICENSE` file to your folder with your specific licensing terms. Losant prefers the [MIT License]() where applicable.
+Add a `LICENSE` file to your folder with your specific licensing terms. Losant prefers the [MIT License](https://opensource.org/licenses/MIT) where applicable.
 
 ---
 
