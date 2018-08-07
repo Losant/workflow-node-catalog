@@ -1,5 +1,5 @@
 # Address Lookup
-This node will do a GPS location reverse lookup and return the associated address with a location. The lookup is done using [Google Maps Geocoding API](https://developers.google.com/maps/documentation/geocoding/intro#ReverseGeocoding). In order you will need an API key from [Google Cloud Platform](https://developers.google.com/maps/documentation/geocoding/get-api-key). 
+This node will do a GPS location reverse lookup and return the associated address with a location. The lookup is done using [Google Maps Geocoding API](https://developers.google.com/maps/documentation/geocoding/intro#ReverseGeocoding). In order to use this node you will need an API key from [Google Cloud Platform](https://developers.google.com/maps/documentation/geocoding/get-api-key). 
 
 ## Input Configuration
 * `Google Maps API Key`: Your Google Cloud Maps API key.
