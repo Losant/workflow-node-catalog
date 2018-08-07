@@ -21,7 +21,7 @@ The moving average is stored in workflow storage for a specific instance of this
 
 This node was developed by [Losant](https://www.losant.com). Please place issues, comments, or questions on the [Losant Forums](https://forums.losant.com).
 
-Copyright (c) 2018 Losant IoT, Inc
+Copyright © 2018 Losant IoT, Inc
 
 https://www.losant.com
 
