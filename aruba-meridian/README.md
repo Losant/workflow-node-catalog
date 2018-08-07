@@ -1,5 +1,5 @@
 # Aruba Meridian Asset Tracking API Node
-This node provide access to Meridian's Asset Tracking tag details using the [Meridian Asset Tracking API](https://docs.meridianapps.com/article/354-asset-tracking-api).
+This node provides access to Meridian's Asset Tracking tag details using the [Meridian Asset Tracking API](https://docs.meridianapps.com/article/354-asset-tracking-api).
 
 ## Input Configuration
 * `Authentication Token`: Your Meridian API authentication token.
