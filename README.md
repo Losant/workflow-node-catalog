@@ -36,6 +36,6 @@ Add a `LICENSE` file to your folder with your specific licensing terms. Losant p
 
 ---
 
-Copyright (c) 2018 Losant IoT, Inc
+Copyright © 2018 Losant IoT, Inc
 
 https://www.losant.com
