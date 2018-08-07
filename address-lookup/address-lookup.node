@@ -1,0 +1,258 @@
+{
+  "_exportDate": "2018-08-07T02:24:55.958Z",
+  "_type": "flow",
+  "applicationId": "57743811e7b6bd01008b935c",
+  "customNodeConfig": {
+    "fields": [
+      {
+        "description": "The API key to use to send request Google Maps APIs.",
+        "id": "apiKey",
+        "label": "Google Maps API Key",
+        "required": true,
+        "type": "stringTemplate"
+      },
+      {
+        "description": "The GPS Coordinates to lookup address for in decimal degrees format (e.g. 39.108,-84.509).",
+        "id": "gpsCoordinates",
+        "label": "GPS Coordinates",
+        "required": true,
+        "type": "stringTemplate"
+      }
+    ],
+    "outputCount": 1,
+    "resultDescription": "Address information found from gps coordinates that are passed in.",
+    "resultMode": "required"
+  },
+  "customNodeSupports": [
+    "cloud"
+  ],
+  "customNodeVersions": [
+  ],
+  "customNodes": [
+  ],
+  "description": "Uses Google Maps API to do a reverse lookup for GPS coordinates and returns the address found..",
+  "enabled": true,
+  "flowClass": "customNode",
+  "flowId": "5b676551f24eac000542d3e5",
+  "globals": [
+  ],
+  "iconData": "data:image/png;base64,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",
+  "id": "5b6902c87c138d0005cc9634",
+  "name": "Address Lookup",
+  "nodes": [
+    {
+      "config": {
+        "branchIndexTemplate": 0,
+        "resultSourcePath": "working.result"
+      },
+      "id": "hiKPTJtNfu",
+      "meta": {
+        "category": "customNodeEnd",
+        "description": "End the custom node run",
+        "label": "Output",
+        "name": "custom-node-end-single",
+        "x": 260,
+        "y": 900
+      },
+      "outputIds": [
+      ],
+      "type": "CustomNodeCapNode"
+    },
+    {
+      "config": {
+        "authCredentials": {
+        },
+        "authType": "none",
+        "disableSSLVerification": false,
+        "errorBehavior": "payloadPath",
+        "errorPath": "working.result",
+        "headerInfo": [
+        ],
+        "method": "GET",
+        "responsePath": "working.result",
+        "timeoutTemplate": "",
+        "uriTemplate": "https://maps.googleapis.com/maps/api/geocode/json?latlng={{data.gpsCoordinates}}&key={{data.apiKey}}"
+      },
+      "id": "ajubISqUJG",
+      "meta": {
+        "category": "data",
+        "description": "Makes the call to google maps API to get result of location.",
+        "label": "Google Maps API",
+        "name": "http",
+        "x": 260,
+        "y": 300
+      },
+      "outputIds": [
+        [
+          "5NJqyYgGQv"
+        ]
+      ],
+      "type": "HttpNode"
+    },
+    {
+      "config": {
+        "message": "",
+        "property": ""
+      },
+      "id": "Zh3XoobdW~",
+      "meta": {
+        "category": "output",
+        "description": "",
+        "label": "Debug",
+        "name": "debug",
+        "x": 260,
+        "y": 780
+      },
+      "outputIds": [
+        [
+          "hiKPTJtNfu"
+        ]
+      ],
+      "type": "DebugNode"
+    },
+    {
+      "config": {
+        "rules": [
+          {
+            "source": "working.result.request",
+            "type": "remove"
+          }
+        ]
+      },
+      "id": "5NJqyYgGQv",
+      "meta": {
+        "category": "logic",
+        "description": "Removes the request information from the result object.",
+        "label": "Mutate",
+        "name": "mutate",
+        "x": 260,
+        "y": 420
+      },
+      "outputIds": [
+        [
+          "sk~xkGPEXs"
+        ]
+      ],
+      "type": "MutateNode"
+    },
+    {
+      "config": {
+        "expression": "{{working.result.statusCode}} === 200"
+      },
+      "id": "sk~xkGPEXs",
+      "meta": {
+        "category": "logic",
+        "description": "",
+        "label": "Conditional",
+        "name": "conditional",
+        "x": 260,
+        "y": 540
+      },
+      "outputIds": [
+        [
+          "LsSrmTHZRR"
+        ],
+        [
+          "LkVzXH5CvP"
+        ]
+      ],
+      "type": "ConditionalNode"
+    },
+    {
+      "config": {
+        "rules": [
+          {
+            "destination": "working.result.address",
+            "source": "working.result.body.results.[0].formatted_address",
+            "type": "copy"
+          }
+        ]
+      },
+      "id": "LkVzXH5CvP",
+      "meta": {
+        "category": "logic",
+        "description": "",
+        "label": "Mutate",
+        "name": "mutate",
+        "x": 360,
+        "y": 660
+      },
+      "outputIds": [
+        [
+          "Zh3XoobdW~"
+        ]
+      ],
+      "type": "MutateNode"
+    },
+    {
+      "config": {
+        "rules": [
+          {
+            "destination": "working.result.address",
+            "type": "set",
+            "valueTemplate": "unknown"
+          }
+        ]
+      },
+      "id": "LsSrmTHZRR",
+      "meta": {
+        "category": "logic",
+        "description": "",
+        "label": "Mutate",
+        "name": "mutate",
+        "x": 160,
+        "y": 660
+      },
+      "outputIds": [
+        [
+          "Zh3XoobdW~"
+        ]
+      ],
+      "type": "MutateNode"
+    }
+  ],
+  "triggers": [
+    {
+      "config": {
+      },
+      "key": "customNodeStart",
+      "meta": {
+        "category": "trigger",
+        "description": "The custom node fires here ...",
+        "label": "Start: Location Reverse Lookup",
+        "name": "customNodeStart",
+        "uiId": "SywHdN5P6W",
+        "x": 260,
+        "y": 180
+      },
+      "outputIds": [
+        [
+          "ajubISqUJG"
+        ]
+      ],
+      "type": "customNodeStart"
+    },
+    {
+      "config": {
+      },
+      "key": "5b676551f24eac000542d3e5-Tls~URMOmJCx22Rym~d8g",
+      "meta": {
+        "category": "trigger",
+        "description": "",
+        "label": "Virtual Button",
+        "name": "virtualButton",
+        "payload": "{\n  \"gpsCoordinates\" : \"39.9501567,-74.1175765\",\n  \"apiKey\" : \"your-api-key\"\n}",
+        "uiId": "D6UBB5fGb7",
+        "x": 480,
+        "y": 180
+      },
+      "outputIds": [
+        [
+          "ajubISqUJG"
+        ]
+      ],
+      "type": "virtualButton"
+    }
+  ],
+  "version": "v1.0.0"
+}
