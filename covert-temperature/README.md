@@ -19,7 +19,7 @@ Outputs the converted value based on the specified input and output units. For e
 
 This node is developed and maintained by [Losant](https://www.losant.com). Please place issues, comments, or questions on the [Losant Forums](https://forums.losant.com).
 
-Copyright (c) 2018 Losant IoT, Inc
+Copyright © 2018 Losant IoT, Inc
 
 https://www.losant.com
 
