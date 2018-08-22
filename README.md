@@ -13,7 +13,7 @@ Once the Contributed Node is imported, it will immediately be available in the `
 | ---- | --------------- | ----------- |
 | [Address Lookup](https://github.com/Losant/workflow-node-catalog/tree/master/address-lookup) | v1.0.0 | Uses the Google Maps API to do a reverse lookup for GPS coordinates and returns the address found. |
 | [Aruba Meridian](https://github.com/Losant/workflow-node-catalog/tree/master/aruba-meridian) | v1.0.0 | Retrieves data from the Meridian Asset Tracking API. |
-| [Convert Temperature](https://github.com/Losant/workflow-node-catalog/tree/master/covert-temperature) | v1.0.0 | Converts temperatures between Celsius, Fahrenheit, and Kelvin. |
+| [Convert Temperature](https://github.com/Losant/workflow-node-catalog/tree/master/convert-temperature) | v1.0.0 | Converts temperatures between Celsius, Fahrenheit, and Kelvin. |
 | [Dark Sky](https://github.com/Losant/workflow-node-catalog/tree/master/dark-sky) | v1.0.0 | Retrieves weather information from the Dark Sky API. |
 | [Downsample](https://github.com/Losant/workflow-node-catalog/tree/master/downsample) | v1.0.0 | Filters a streaming set of data by downsampling multiple data points into a single value. |
 | [GPS Distance](https://github.com/Losant/workflow-node-catalog/tree/master/gps-distance) | v1.0.0 | Calculates the distance, in meters, between two GPS coordinates. |
