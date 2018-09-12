@@ -20,7 +20,7 @@
       }
     ],
     "outputCount": 1,
-    "resultDescription": "The result of the [Loggly HTTP API](https://www.loggly.com/docs/http-endpoint/) request. \n\nIf the request fails, the result will be an object with an \"error\" property.",
+    "resultDescription": "The result of the [Loggly HTTP API](https://www.loggly.com/docs/http-endpoint/) request. If the request fails, the result will be an object with an \"error\" property.",
     "resultMode": "optional"
   },
   "customNodeSupports": [

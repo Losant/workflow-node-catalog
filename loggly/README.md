@@ -3,7 +3,7 @@ Log payload data to Loggly using their [HTTP API](https://www.loggly.com/docs/ht
 
 ## Input Configuration
 * `Loggly Customer Token`: [Customer Tokens](http://loggly.com/docs/customer-token-authentication-token/) are used by Loggly to associate data you send with your account. The token is used as part of the API request.
-* `Event Data`: The payload path of event data to send to Loggly..
+* `Event Data`: The payload path of event data to send to Loggly.
 
 ## Output Result
 The result of all successful requests will include `body`, `headers`, and `statusCode` fields. The `body` object contains the response data.
