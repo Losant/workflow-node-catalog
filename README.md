@@ -18,6 +18,7 @@ Once the Contributed Node is imported, it will immediately be available in the `
 | [Downsample](https://github.com/Losant/workflow-node-catalog/tree/master/downsample) | v1.0.0 | Filters a streaming set of data by downsampling multiple data points into a single value. |
 | [GPS Distance](https://github.com/Losant/workflow-node-catalog/tree/master/gps-distance) | v1.0.0 | Calculates the distance, in meters, between two GPS coordinates. |
 | [Hologram](https://github.com/Losant/workflow-node-catalog/tree/master/hologram) | v1.0.0 | Retrieves details about a specific Hologram device. |
+| [Loggly](https://github.com/Losant/workflow-node-catalog/tree/master/loggly) | v1.0.0 | Log payload data to Loggly using their HTTP API. |
 | [Moving Average](https://github.com/Losant/workflow-node-catalog/tree/master/moving-average) | v1.0.0 | Calculates a moving average over a configurable number of data points. |
 | [Particle](https://github.com/Losant/workflow-node-catalog/tree/master/particle) | v1.0.0 | Provide access to Particle's Remote Diagnostics API to retrieve device information. |
 | [Sigfox](https://github.com/Losant/workflow-node-catalog/tree/master/sigfox) | v1.0.0 | Provide access to Sigfox's REST API to retrieve a device's information. |
