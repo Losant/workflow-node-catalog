@@ -1,0 +1,383 @@
+{
+  "_exportDate": "2018-09-18T21:01:20.070Z",
+  "_type": "flow",
+  "applicationId": "5b300559d4fbe200092d85bf",
+  "customNodeConfig": {
+    "fields": [
+      {
+        "description": "All requests to the LIFX API require an app token. You can generate an access token in your [account settings](https://cloud.lifx.com/settings). For more details, please refer to LIFX's [Authentication Documentation](https://api.developer.lifx.com/docs/authentication).  ",
+        "id": "token",
+        "label": "LIFX App Token",
+        "required": true,
+        "type": "stringTemplate"
+      },
+      {
+        "defaultValue": "listLights",
+        "description": "This node supports three API Actions: \n\n- [List Lights](https://api.developer.lifx.com/docs/list-lights) - Filter the lights using [selectors](https://api.developer.lifx.com/docs/selectors).\n- [Set State](https://api.developer.lifx.com/docs/set-state) - Sets the state of the lights within the selector.\n- [Toggle](https://api.developer.lifx.com/docs/toggle-power) - Turn off lights if any of them are on, or turn them on if they are all off. ",
+        "id": "action",
+        "label": "Action",
+        "options": [
+          {
+            "label": "List Lights",
+            "value": "listLights"
+          },
+          {
+            "label": "Set State",
+            "value": "setState"
+          },
+          {
+            "label": "Toggle",
+            "value": "toggle"
+          }
+        ],
+        "type": "select"
+      },
+      {
+        "description": "[Lifx selectors](https://api.developer.lifx.com/docs/selectors) are an identifier for addressing one or many lights belonging to the authenticated account.",
+        "id": "selector",
+        "label": "Selector",
+        "required": false,
+        "type": "stringTemplate"
+      },
+      {
+        "description": "The [Set State](https://api.developer.lifx.com/docs/set-state) and [Toggle](https://api.developer.lifx.com/docs/toggle-power) actions support the ability to include a body with the request. See their respective documentation to see what to include in the body.",
+        "id": "body",
+        "label": "Body",
+        "required": false,
+        "type": "jsonTemplate"
+      }
+    ],
+    "outputCount": 1,
+    "resultDescription": "The output of this node will result in an object with two properties:\n\n- body - This will be the result of the request from [LFIX](https://api.developer.lifx.com/docs/).\n- error - If the request fails, this will be an object with details of the error.",
+    "resultMode": "optional"
+  },
+  "customNodeSupports": [
+    "cloud"
+  ],
+  "customNodeVersions": [
+  ],
+  "customNodes": [
+  ],
+  "description": "Control [LIFX](https://www.lifx.com/) devices over the internet using the [LIFX HTTP API](https://api.developer.lifx.com/docs/).",
+  "enabled": true,
+  "flowClass": "customNode",
+  "globals": [
+  ],
+  "iconData": "data:image/png;base64,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",
+  "id": "5b9fd27e9cb4bd000968c68b",
+  "name": "LIFX",
+  "nodes": [
+    {
+      "config": {
+        "branchIndexTemplate": 0,
+        "resultSourcePath": "working.return"
+      },
+      "id": "yGfln7~t2o",
+      "meta": {
+        "category": "customNodeEnd",
+        "description": "End the Custom Node run\n\n```\n{ test }\n```",
+        "label": "Output",
+        "name": "custom-node-end-single",
+        "x": 280,
+        "y": 1080
+      },
+      "outputIds": [
+      ],
+      "type": "CustomNodeCapNode"
+    },
+    {
+      "config": {
+        "authCredentials": {
+        },
+        "authType": "none",
+        "disableSSLVerification": false,
+        "errorBehavior": "payloadPath",
+        "errorPath": "working.return.error",
+        "headerInfo": [
+          {
+            "key": "Authorization",
+            "valueTemplate": "Bearer {{ data.token }}"
+          }
+        ],
+        "method": "GET",
+        "responsePath": "working.lifx",
+        "timeoutTemplate": "",
+        "uriTemplate": "https://api.lifx.com/v1/lights/{{ data.selector }}"
+      },
+      "id": "29F45lD32i",
+      "meta": {
+        "category": "data",
+        "description": "",
+        "label": "HTTP",
+        "name": "http",
+        "x": 80,
+        "y": 640
+      },
+      "outputIds": [
+        [
+          "QxTzugwIV_"
+        ]
+      ],
+      "type": "HttpNode"
+    },
+    {
+      "config": {
+        "rules": [
+          {
+            "destination": "working.return.body",
+            "type": "set",
+            "valueTemplate": "{{ working.lifx.body }}"
+          }
+        ]
+      },
+      "id": "QxTzugwIV_",
+      "meta": {
+        "category": "logic",
+        "description": "",
+        "label": "Mutate",
+        "name": "mutate",
+        "x": 80,
+        "y": 760
+      },
+      "outputIds": [
+        [
+          "SLTNmLuwLz"
+        ]
+      ],
+      "type": "MutateNode"
+    },
+    {
+      "config": {
+        "cases": [
+          {
+            "caseLabel": "List Lights",
+            "caseTemplate": "listLights",
+            "dontBreak": false
+          },
+          {
+            "caseLabel": "Set State",
+            "caseTemplate": "setState",
+            "dontBreak": false
+          },
+          {
+            "caseLabel": "Toggle",
+            "caseTemplate": "toggle",
+            "dontBreak": false
+          }
+        ],
+        "switchTemplate": "{{ data.action }}"
+      },
+      "id": "98IGxYf8dM",
+      "meta": {
+        "category": "logic",
+        "description": "",
+        "label": "Switch",
+        "name": "switch",
+        "x": 280,
+        "y": 420
+      },
+      "outputIds": [
+        [
+        ],
+        [
+          "29F45lD32i"
+        ],
+        [
+          "5df9bj_fOx"
+        ],
+        [
+          "Hcie4_pkSE"
+        ]
+      ],
+      "type": "SwitchNode"
+    },
+    {
+      "config": {
+        "message": "",
+        "property": ""
+      },
+      "id": "SLTNmLuwLz",
+      "meta": {
+        "category": "output",
+        "description": "",
+        "label": "Debug",
+        "name": "debug",
+        "x": 280,
+        "y": 1000
+      },
+      "outputIds": [
+        [
+          "yGfln7~t2o"
+        ]
+      ],
+      "type": "DebugNode"
+    },
+    {
+      "config": {
+        "authCredentials": {
+        },
+        "authType": "none",
+        "bodyTemplate": "{{ jsonEncode data.body }}",
+        "disableSSLVerification": false,
+        "errorBehavior": "payloadPath",
+        "errorPath": "working.return.error",
+        "headerInfo": [
+          {
+            "key": "Authorization",
+            "valueTemplate": "Bearer {{ data.token }}"
+          }
+        ],
+        "method": "PUT",
+        "responsePath": "working.lifx",
+        "timeoutTemplate": "",
+        "uriTemplate": "https://api.lifx.com/v1/lights/{{ data.selector }}/state"
+      },
+      "id": "5df9bj_fOx",
+      "meta": {
+        "category": "data",
+        "description": "",
+        "label": "HTTP",
+        "name": "http",
+        "x": 280,
+        "y": 640
+      },
+      "outputIds": [
+        [
+          "fA8_Ac_G9N"
+        ]
+      ],
+      "type": "HttpNode"
+    },
+    {
+      "config": {
+        "rules": [
+          {
+            "destination": "working.return.body",
+            "type": "set",
+            "valueTemplate": "{{ working.lifx.body }}"
+          }
+        ]
+      },
+      "id": "fA8_Ac_G9N",
+      "meta": {
+        "category": "logic",
+        "description": "",
+        "label": "Mutate",
+        "name": "mutate",
+        "x": 280,
+        "y": 760
+      },
+      "outputIds": [
+        [
+          "SLTNmLuwLz"
+        ]
+      ],
+      "type": "MutateNode"
+    },
+    {
+      "config": {
+        "authCredentials": {
+        },
+        "authType": "none",
+        "bodyTemplate": "{{ jsonEncode data.body }}",
+        "disableSSLVerification": false,
+        "errorBehavior": "payloadPath",
+        "errorPath": "working.return.error",
+        "headerInfo": [
+          {
+            "key": "Authorization",
+            "valueTemplate": "Bearer {{ data.token }}"
+          }
+        ],
+        "method": "POST",
+        "responsePath": "working.lifx",
+        "timeoutTemplate": "",
+        "uriTemplate": "https://api.lifx.com/v1/lights/{{ data.selector }}/toggle"
+      },
+      "id": "Hcie4_pkSE",
+      "meta": {
+        "category": "data",
+        "description": "",
+        "label": "HTTP",
+        "name": "http",
+        "x": 500,
+        "y": 640
+      },
+      "outputIds": [
+        [
+          "WRzLkT2j9G"
+        ]
+      ],
+      "type": "HttpNode"
+    },
+    {
+      "config": {
+        "rules": [
+          {
+            "destination": "working.return.body",
+            "type": "set",
+            "valueTemplate": "{{ working.lifx.body }}"
+          }
+        ]
+      },
+      "id": "WRzLkT2j9G",
+      "meta": {
+        "category": "logic",
+        "description": "",
+        "label": "Mutate",
+        "name": "mutate",
+        "x": 500,
+        "y": 760
+      },
+      "outputIds": [
+        [
+          "SLTNmLuwLz"
+        ]
+      ],
+      "type": "MutateNode"
+    }
+  ],
+  "triggers": [
+    {
+      "config": {
+      },
+      "key": "customNodeStart",
+      "meta": {
+        "category": "trigger",
+        "description": "The Custom Node fires here ...",
+        "label": "Start: LIFX",
+        "name": "customNodeStart",
+        "uiId": "SywHdN5P6W",
+        "x": 260,
+        "y": 260
+      },
+      "outputIds": [
+        [
+          "98IGxYf8dM"
+        ]
+      ],
+      "type": "customNodeStart"
+    },
+    {
+      "config": {
+      },
+      "key": "5b9fd27e9cb4bd000968c68b-Nerepm8VIHK0U7MD82JRq",
+      "meta": {
+        "category": "trigger",
+        "description": "",
+        "label": "Virtual Button",
+        "name": "virtualButton",
+        "payload": "{\n  \"token\": \"***\",\n\t\"action\": \"toggle\",\n  \"selector\": \"***\",\n  \"body\": {\n    \"power\": \"on\",\n    \"color\": \"orange\",\n    \"brightness\": 1,\n    \"duration\": 1\n  }\n}",
+        "uiId": "rJ9unUzqYV",
+        "x": 500,
+        "y": 280
+      },
+      "outputIds": [
+        [
+          "98IGxYf8dM"
+        ]
+      ],
+      "type": "virtualButton"
+    }
+  ]
+}
