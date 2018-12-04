@@ -15,13 +15,13 @@ Losant (https://www.losant.com) offers an easy-to-use and powerful Enterprise Io
 ## Integration Steps
 
 1. Import the SIGNL4 Custom Node in Losant
-In the Losant dashboard go to Workflows -> Custom Nodes and import the SIGNL4 Custom Node. You can find this one at Github (https://github.com/signl4/signl4-integration-losant). The file is called “signl4-alert-v100.node”.
+In the Losant dashboard go to Workflows -> Custom Nodes and import the SIGNL4 Custom Node. You can find this one at Github (https://github.com/signl4/signl4). The file is called “signl4-alert.node”.
 
  ![SIGNL4 Custom Node](SIGNL4-Custom-Node.png)
 
 2. Prepare the Raspberry Pi (optional)
 There is a great description on how to add and configure devices available here: https://docs.losant.com/getting-started/boards/getting-started-with-raspberry-pi.
-We have used this sample and you can find our adapted code at Github (https://github.com/signl4/signl4-integration-losant). The file is called “index.py”. Please make sure you use your own Device ID, App Access Key and App Access Secret as described in the above article.
+We have used this sample and you can find our adapted code at Github (https://github.com/signl4/signl4/example). The file is called “index.py”. Please make sure you use your own Device ID, App Access Key and App Access Secret as described in the above article.
 
 3. Create a New Workflow in Losant
 Now you can create your own workflow using the device and the SIGNL4 Custom Node as shown below.
