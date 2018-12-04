@@ -18,7 +18,7 @@ The result of all successful requests will include `body`, `headers`, and `statu
 }
 ```
 
-If the request is successfully made, but Dark Sky's API returns an error, check the `statusCode` and `body` fields for additional details.
+If the request is successfully made, but SIGNL4's API returns an error, check the `statusCode` and `body` fields for additional details.
 
 ```json
 {
