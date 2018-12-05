@@ -21,7 +21,7 @@ In the Losant dashboard go to Workflows -> Custom Nodes and import the SIGNL4 Cu
 
 2. Prepare the Raspberry Pi (optional)
 There is a great description on how to add and configure devices available here: https://docs.losant.com/getting-started/boards/getting-started-with-raspberry-pi.
-We have used this sample and you can find our adapted code at Github (https://github.com/signl4/example). The file is called “index.py”. Please make sure you use your own Device ID, App Access Key and App Access Secret as described in the above article.
+We have used this sample and you can find our adapted code at Github (https://github.com/signl4/signl4-integration-losant). The file is called “index.py”. Please make sure you use your own Device ID, App Access Key and App Access Secret as described in the above article.
 
 3. Create a New Workflow in Losant
 Now you can create your own workflow using the device and the SIGNL4 Custom Node as shown below.
