@@ -1,12 +1,15 @@
 # Aruba Meridian Asset Tracking API Node
+
 This node provides access to Meridian's Asset Tracking tag details using the [Meridian Asset Tracking API](https://docs.meridianapps.com/article/354-asset-tracking-api).
 
 ## Input Configuration
+
 * `Authentication Token`: Your Meridian API authentication token.
 * `Location ID`: The location ID for the tags you'd like to retrieve information about.
 * `Asset MAC Address`: The MAC address of an individual tag. Optional. If left blank, the result will include all assets in the specified location, up to 1,000.
 
 ## Output Result
+
 The result of all successful requests will include `body`, `headers`, and `statusCode` fields. The `body` object contains the response data.
 
 If the `Asset MAC Address` field is left blank, the response will include an array of up to 1,000 assets at the specified `Location ID`.
@@ -36,7 +39,7 @@ If the `Asset MAC Address` field is left blank, the response will include an arr
     ],
   },
   "headers": {  },
-  "statusCode": 200 
+  "statusCode": 200
 }
 ```
 
@@ -87,7 +90,7 @@ If the request to Meridian's API fails, the output will contain an `error` objec
   "error": {
     "message": "Cannot resolve host: edit.meridianapps.com",
   }
-} 
+}
 ```
 
 ## Version History
@@ -100,7 +103,6 @@ If the request to Meridian's API fails, the output will contain an `error` objec
 
 This node is developed and maintained by [Losant](https://www.losant.com). Please place issues, comments, or questions on the [Losant Forums](https://forums.losant.com).
 
-Copyright © 2018 Losant IoT, Inc
+Copyright © 2019 Losant IoT, Inc
 
-https://www.losant.com
-
+<https://www.losant.com>
