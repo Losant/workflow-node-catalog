@@ -1,11 +1,14 @@
 # Hologram
+
 This node provide access to [Hologram's API](https://hologram.io/docs/reference/cloud/http/#/reference/device-management/devices/get-a-device) to retrieve device information.
 
 ## Input Configuration
+
 * `Hologram API Key`: Your Hologram API Key. You can obtain an API key through your Hologram account settings.
 * `Device ID`: The Hologram device ID to retrieve information about.
 
 ## Output Result
+
 The result of all successful requests will include `body`, `headers`, and `statusCode` fields. The `body` object contains the response data.
 
 ```json
@@ -78,7 +81,7 @@ If the request to Hologram's API fails, the output will contain an `error` objec
   "error": {
     "message": "Cannot resolve host: dashboard.hologram.io",
   }
-} 
+}
 ```
 
 ## Version History
@@ -91,7 +94,6 @@ If the request to Hologram's API fails, the output will contain an `error` objec
 
 This node is developed and maintained by [Losant](https://www.losant.com). Please place issues, comments, or questions on the [Losant Forums](https://forums.losant.com).
 
-Copyright © 2018 Losant IoT, Inc
+Copyright © 2019 Losant IoT, Inc
 
-https://www.losant.com
-
+<https://www.losant.com>

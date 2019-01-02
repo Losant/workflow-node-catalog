@@ -1,11 +1,14 @@
 # Address Lookup
-This node will do a GPS location reverse lookup and return the associated address with a location. The lookup is done using [Google Maps Geocoding API](https://developers.google.com/maps/documentation/geocoding/intro#ReverseGeocoding). In order to use this node you will need an API key from [Google Cloud Platform](https://developers.google.com/maps/documentation/geocoding/get-api-key). 
+
+This node will do a GPS location reverse lookup and return the associated address with a location. The lookup is done using [Google Maps Geocoding API](https://developers.google.com/maps/documentation/geocoding/intro#ReverseGeocoding). In order to use this node you will need an API key from [Google Cloud Platform](https://developers.google.com/maps/documentation/geocoding/get-api-key).
 
 ## Input Configuration
+
 * `Google Maps API Key`: Your Google Cloud Maps API key.
 * `GPS Coordinates`: The GPS Coordinates to look up the address for in decimal degrees format (e.g. 39.108,-84.509).
 
 ## Output Result
+
 The result of all successful requests will include `address`, `body`, `headers`, and `statusCode` fields. The `address` field will have the full address returned.
 
 ```json
@@ -23,7 +26,7 @@ The `body` object contains the entire response data from the API. This can be us
 {
   "address": "3324 NJ-37, Toms River, NJ 08753, USA",
   "body": {
-  	"status": "OK",
+    "status": "OK",
     "results": [
       {
         "types": ["premise"],
@@ -113,9 +116,9 @@ If the request is successfully made, but the API returns an error, check the `st
 ```json
 {
   "body": {
-  	"status": "REQUEST_DENIED",
-  	"results": [],
-  	"error_message": "The provided API key is invalid."
+    "status": "REQUEST_DENIED",
+    "results": [],
+    "error_message": "The provided API key is invalid."
   },
   "headers": { },
   "statusCode": 403
@@ -129,7 +132,7 @@ If the request to Google Maps API fails, the output will contain an `error` obje
   "error": {
     "message": "Cannot resolve host: maps.googleapis.com",
   }
-} 
+}
 ```
 
 ## Version History
@@ -142,6 +145,6 @@ If the request to Google Maps API fails, the output will contain an `error` obje
 
 This node is developed and maintained by [Losant](https://www.losant.com). Please place issues, comments, or questions on the [Losant Forums](https://forums.losant.com).
 
-Copyright © 2018 Losant IoT, Inc
+Copyright © 2019 Losant IoT, Inc
 
-https://www.losant.com
+<https://www.losant.com>
