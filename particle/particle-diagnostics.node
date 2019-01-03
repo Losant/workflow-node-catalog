@@ -20,7 +20,7 @@
       },
       {
         "defaultValue": "get",
-        "description": "Specify the API call to make on the given device.\nThe followng is the list of method names to the API call:\n\n- Update /v1/diagnostics/:deviceId/update\n- Last /v1/diagnostics/:deviceId/last\n- Get /v1/diagnostics/:deviceId\n- MetaData /v1/diagnostics/:deviceId/metadata\n\nFor more details, see Particle [documentation](https://docs.particle.io/reference/api/#remote-diagnostics) on remote diagnostics.",
+        "description": "Specify the API call to make on the given device.\nThe following is the list of method names to the API call:\n\n- Update /v1/diagnostics/:deviceId/update\n- Last /v1/diagnostics/:deviceId/last\n- Get /v1/diagnostics/:deviceId\n- MetaData /v1/diagnostics/:deviceId/metadata\n\nFor more details, see Particle [documentation](https://docs.particle.io/reference/api/#remote-diagnostics) on remote diagnostics.",
         "id": "method",
         "label": "Method",
         "options": [

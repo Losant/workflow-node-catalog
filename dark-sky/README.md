@@ -1,11 +1,14 @@
 # Dark Sky
+
 This node provides access to [Dark Sky's Forecast API](https://darksky.net/dev/docs#forecast-request).
 
 ## Input Configuration
+
 * `Dark Sky API Key`: Your Dark Sky API key.
 * `GPS Coordinates`: The GPS Coordinates to retrieve weather for in decimal degrees format (e.g. 39.108,-84.509).
 
 ## Output Result
+
 The result of all successful requests will include `body`, `headers`, and `statusCode` fields. The `body` object contains the response data.
 
 ```json
@@ -63,7 +66,7 @@ If the request to Dark Sky's API fails, the output will contain an `error` objec
   "error": {
     "message": "Cannot resolve host: api.darksky.net",
   }
-} 
+}
 ```
 
 ## Version History
@@ -76,7 +79,6 @@ If the request to Dark Sky's API fails, the output will contain an `error` objec
 
 This node is developed and maintained by [Losant](https://www.losant.com). Please place issues, comments, or questions on the [Losant Forums](https://forums.losant.com).
 
-Copyright © 2018 Losant IoT, Inc
+Copyright © 2019 Losant IoT, Inc
 
-https://www.losant.com
-
+<https://www.losant.com>
