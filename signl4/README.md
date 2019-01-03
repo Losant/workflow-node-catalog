@@ -47,7 +47,7 @@ If the request to SIGNL4's API fails, the output will contain an `error` object 
 
 | Version | Date | Description |
 | ------- | -------- | ---------------- |
-| v1.0.0  | 12/7/2018 | Initial release. |
+| v1.0.0  | 1/4/2019 | Initial release. |
 
 ---
 
