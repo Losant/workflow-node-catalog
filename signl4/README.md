@@ -1,5 +1,5 @@
 # SIGNL4-Alert
-This node provides access to transmitting a SIGNL4 event. [SIGNL4 API](https://www.signl4.com/developers/api).
+[SIGNL4](https://www.signl4.com/) provides mobile alerting via app, push, text, and voice with tracking & escalation. This node provides the ability to report a SIGNL4 event via the [SIGNL4 API](https://www.signl4.com/developers/api).
 
 ## Input Configuration
 * `SIGNL4 Team Secret`: Your SIGNL4 team secret.
@@ -26,7 +26,7 @@ If the request is successfully made, but SIGNL4's API returns an error, check th
       "requestId": "e933ece1-d0ef-471e-9627-6a5ae9de606a",
       "code": 3004,
       "details": "An event source with ID 96sbq49u was not found.",
-      "messaage": "Error raising event."
+      "message": "Error raising event."
   },
   "headers": { },
   "statusCode": 404
