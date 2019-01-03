@@ -1,4 +1,4 @@
-# SIGNL4-Alert
+# SIGNL4 Alert
 [SIGNL4](https://www.signl4.com/) provides mobile alerting via app, push, text, and voice with tracking & escalation. This node provides the ability to report a SIGNL4 event via the [SIGNL4 API](https://www.signl4.com/developers/api).
 
 ## Input Configuration
