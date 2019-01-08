@@ -68,6 +68,6 @@ If the request to Sigfox's API fails, the output will contain an `error` object 
 
 This node is developed and maintained by [Losant](https://www.losant.com). Please place issues, comments, or questions on the [Losant Forums](https://forums.losant.com).
 
-Copyright (c) 2019 Losant IoT, Inc
+Copyright © 2019 Losant IoT, Inc
 
 <https://www.losant.com>
