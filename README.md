@@ -25,6 +25,7 @@ Once the Contributed Node is imported, it will immediately be available in the `
 | [Moving Average](https://github.com/Losant/workflow-node-catalog/tree/master/moving-average) | v1.0.0 | Calculates a moving average over a configurable number of data points. |
 | [Particle](https://github.com/Losant/workflow-node-catalog/tree/master/particle) | v1.0.0 | Provide access to Particle's Remote Diagnostics API to retrieve device information. |
 | [Sigfox](https://github.com/Losant/workflow-node-catalog/tree/master/sigfox) | v1.0.0 | Provide access to Sigfox's REST API to retrieve a device's information. |
+| [SIGNL4 Alert](https://github.com/Losant/workflow-node-catalog/tree/master/signl4) | v1.0.0 | Provides mobile alerting via app, push, text, and voice with tracking & escalation. This node provides the ability to report a SIGNL4 event via the SIGNL4 API |
 
 ## Adding a Node to this Catalog
 
