@@ -64,7 +64,6 @@ If the request is successfully made, but Algolia's API returns an error, check t
   "headers": { },
   "statusCode": 403
 }
-}
 ```
 
 If the request to Dark Sky's API fails, the output will contain an `error` object with additional details.
