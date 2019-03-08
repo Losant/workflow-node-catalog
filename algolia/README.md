@@ -6,8 +6,8 @@ This node provides access to [Algolia's Search Index HTTPS GET API](https://www.
 
 * `Algolia Application ID`: The Algolia Application ID.
 * `Algolia Application Key`: The Algolia Application Key.
-* `Algolia Index Name to Search`: Algolia Index Name to search.
-* `Search Parameters`: The parameters to search for within the index. Review the link above to the Search Index GET API for more information.
+* `Algolia Index Name to Search`: The Algolia Index Name to search.
+* `Search Parameters`: The Algolia [Search Parameters](https://www.algolia.com/doc/api-reference/search-api-parameters/) that can be used with your search criteria to search your index.
 
 ## Output Result
 
@@ -82,7 +82,7 @@ If the request to Dark Sky's API fails, the output will contain an `error` objec
 
 | Version | Date | Description |
 | ------- | -------- | ---------------- |
-| v1.0.0  | 3/7/2019 | Initial release. |
+| v1.0.0  | 3/11/2019 | Initial release. |
 
 ---
 
