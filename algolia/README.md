@@ -1,6 +1,6 @@
 # Algolia - Search Index with HTTPS GET
 
-This node provides access to [Algolia's Search Index GET API](https://www.algolia.com/doc/rest-api/search/#search-index-get).
+This node provides access to [Algolia's Search Index HTTPS GET API](https://www.algolia.com/doc/rest-api/search/#search-index-get).
 
 ## Input Configuration
 
