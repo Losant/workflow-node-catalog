@@ -81,7 +81,7 @@ If the request to Dark Sky's API fails, the output will contain an `error` objec
 
 | Version | Date | Description |
 | ------- | -------- | ---------------- |
-| v1.0.0  | 3/11/2019 | Initial release. |
+| v1.0.0  | 3/12/2019 | Initial release. |
 
 ---
 

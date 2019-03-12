@@ -15,6 +15,7 @@ Once the Contributed Node is imported, it will immediately be available in the `
 | Node | Latest Version | Description |
 | ---- | --------------- | ----------- |
 | [Address Lookup](https://github.com/Losant/workflow-node-catalog/tree/master/address-lookup) | v1.0.0 | Uses the Google Maps API to do a reverse lookup for GPS coordinates and returns the address found. |
+| [Algolia Search](https://github.com/Losant/workflow-node-catalog/tree/master/algolia) | v1.0.0 | Provide access to Algolia Search REST API to search and retrieve data from your Algolia Indices. |
 | [Aruba Meridian](https://github.com/Losant/workflow-node-catalog/tree/master/aruba-meridian) | v1.0.0 | Retrieves data from the Meridian Asset Tracking API. |
 | [Convert Temperature](https://github.com/Losant/workflow-node-catalog/tree/master/convert-temperature) | v1.0.0 | Converts temperatures between Celsius, Fahrenheit, and Kelvin. |
 | [Dark Sky](https://github.com/Losant/workflow-node-catalog/tree/master/dark-sky) | v1.0.0 | Retrieves weather information from the Dark Sky API. |
