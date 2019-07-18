@@ -7,7 +7,7 @@ Tokens are automatically cached and re-fetched when they expire.
 ## Input Configuration
 
 * `Service Account Key`: A Google Cloud [Service Account Key](https://cloud.google.com/iam/docs/creating-managing-service-account-keys), in JSON format.
-* `Scope`: The [OAuth Scope](https://developers.google.com/identity/protocols/googlescopes) to request a token for. The Service Account must have the appropriate privileges to request a token for the specified scope.
+* `Scope`: The [OAuth Scope](https://developers.google.com/identity/protocols/googlescopes) to request. The Service Account must have the appropriate privileges to request a token for the specified scope.
 
 ## Output Result
 
