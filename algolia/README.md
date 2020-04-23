@@ -66,7 +66,7 @@ If the request is successfully made, but Algolia's API returns an error, check t
 }
 ```
 
-If the request to Dark Sky's API fails, the output will contain an `error` object with additional details.
+If the request to Algolia's API fails, the output will contain an `error` object with additional details.
 
 ```json
 {
