@@ -21,6 +21,7 @@ Once the Contributed Node is imported, it will immediately be available in the `
 | [Dark Sky](https://github.com/Losant/workflow-node-catalog/tree/master/dark-sky) | v1.0.0 | Retrieves weather information from the Dark Sky API. |
 | [Downsample](https://github.com/Losant/workflow-node-catalog/tree/master/downsample) | v1.0.0 | Filters a streaming set of data by downsampling multiple data points into a single value. |
 | [GCP: OAuth](https://github.com/Losant/workflow-node-catalog/tree/master/gcp-oauth) | v1.0.0 | Creates OAuth tokens from Google Cloud Service Accounts. |
+| [GCP: Vision API](https://github.com/Losant/workflow-node-catalog/tree/master/gcp-vision-api) | v1.0.0 | Provides access to the Google Vision API. |
 | [GPS Distance](https://github.com/Losant/workflow-node-catalog/tree/master/gps-distance) | v1.0.0 | Calculates the distance, in meters, between two GPS coordinates. |
 | [Hologram](https://github.com/Losant/workflow-node-catalog/tree/master/hologram) | v1.0.0 | Retrieves details about a specific Hologram device. |
 | [Loggly](https://github.com/Losant/workflow-node-catalog/tree/master/loggly) | v1.0.0 | Log payload data to Loggly using their HTTP API. |
@@ -59,6 +60,6 @@ Add a `LICENSE` file to your folder with your specific licensing terms. Losant p
 
 ---
 
-Copyright © 2019 Losant IoT, Inc
+Copyright © 2020 Losant IoT, Inc
 
 <https://www.losant.com>
