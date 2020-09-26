@@ -6,8 +6,8 @@ _Note: Property values are not searched, only property names._
 
 ## Input Configuration
 
-- `path`: The payload path containing the object to recursively search and redact.
-- `keysToRedactCSV`: Optional additional string(s) denote sensitive keys.
+- `Payload Path`: The payload path containing the object to recursively search and redact.
+- `Additional Strings to Redact`: Optional additional string(s) denote sensitive keys.
 
 ## Output Result
 
