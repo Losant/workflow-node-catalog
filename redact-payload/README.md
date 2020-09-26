@@ -19,7 +19,7 @@ The default list of keywords denoting values to be redacted is `secret`, `token`
 
 ## Example:
 
-Given a `keysToRedactCSV` value of `hello,sensitive`, and the payload:
+Given a `Additional Strings to Redact` value of `hello,sensitive`, and the payload:
 
 ```
 {
