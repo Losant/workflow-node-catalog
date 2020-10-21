@@ -2,6 +2,10 @@
 
 This repository contains a collection of contributed nodes for [Losant's Visual Workflow Engine](https://docs.losant.com/workflows/overview/). These nodes provide additional capabilities and third-party integrations above and beyond the built-in nodes provided by the Losant workflow editor.
 
+## Deprecation Notice
+
+This repository has been deprecated. The nodes found in this repository have been moved to the [Losant Templates](https://github.com/Losant/losant-templates) repository.
+
 ## Importing a Contributed Node
 
 Each folder in this repository is made up of one or more `.node` files. Each file represents a self-contained node that can be imported into your Losant Application as a [Custom Node](https://docs.losant.com/workflows/custom-nodes/overview/).
